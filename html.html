@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>부모-자식 선택자 예제</title>
+    <style>
+      /* section 바로 아래에 있는 p 태그만 선택 */
+      section > p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p>이 문장은 선택됩니다.</p>
+      <div>
+        <p>이 문장은 선택되지 않습니다.</p>
+        <!-- div = 부모의 자식이 아님 안에 있기 때문에 적용되지 않음 -->
+      </div>
+    </section>
+  </body>
+</html>
