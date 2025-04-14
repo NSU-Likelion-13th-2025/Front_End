@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>멋사 프런트_1차_HTML</title>
+    </head>
+    <body>
+        <header>
+            <h1>HTML 태그 알아가기</h1>
+            <p>멋쟁이사자처럼 at 남서울대</p>
+        </header>
+        <main>
+            <form action="#" method="post">
+                <label for="username">아이디</label><br>
+                <input type="text" id="username" name="username" required>
+                <br><br>
+                <label for="email_id">이메일</label><br/>
+                <input type="text" id="email_id" name="email_id" required/>
+                <select id="email_domain" name="email_domain" required>
+                    <option vaule="">선택</option>
+                    <option vaule="gmail.com">gmail.com</option>
+                    <option value="naver.com">naver.com</option>
+                    <option vaule="zheyys.is">zheyys.is</option>
+                </select>
+                <br/>
+                <label for="password">비밀번호</label><br/>
+                <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="비밀번호를 입력하세요"
+                required
+                pattern="^$%#%&&#"
+                title="비밀번호는 영문자와 숫자를 조합하여 8자 이상이어야 합니다."
+                />
+                <br/><br/>
+
+                <!-- 색상선택 -->
+                 <label>좋아하는 색상: <input type="color" id-="color"/></label>
+                 <input type="date">
+                 <br/><br/>
+                 <!--성별 선택(라디오 버튼)-->
+                 <label>성별</label><br/>
+                 <input type="radio" id="maie" name="gender" value="male"/>
+                 <label for="male">남성</label>
+                 <input type="radio" id="female" name="gender" value="female" />
+                 <label for="female">여성</label>
+                 <br/><br/>
+
+                 <section  id="media">
+                    <h2>컨텐츠 미디어</h2>
+                 <p>아래의 본인이 좋아하는 비디오와 음악을 삽입해보세요</p>
+
+                 <!--유튜브 비디오 삽입-->
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Bbl3qPS9x4o?si=Mk2h29bLuMovW-bv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 <br/><br/>
+                 <!-- 사운드클라우드 오디오 삽입 -->
+                   <iframe
+                   width="30%"
+                   height="166"
+                   scrolling="no"
+                   frameborder="no"
+                    allow="autoplay"
+                    src="https://on.soundcloud.com/knqUdnPV59cXek4Q9">
+                 </iframe>
+                </section>
+
+                
+
+            </form>
+        </main>
+    </body>
+    </html>
